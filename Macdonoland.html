@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>O Clarim Vespertino — Macdonoland fecha as portas</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Playfair+Display:wght@900&family=Special+Elite&display=swap">
+<style>
+:root{
+  --paper:#d8d4bf; --paper2:#cbc6ae; --ink:#1b1a16; --muted:#55513f;
+  --rule:#1b1a16; --stamp:#9b1c1c; --photo-bg:#b9b5a0;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --paper:#1d1c18; --paper2:#26241f; --ink:#e3dcc4; --muted:#a39c84;
+    --rule:#e3dcc4; --stamp:#d65a4a; --photo-bg:#34322b;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --paper:#1d1c18; --paper2:#26241f; --ink:#e3dcc4; --muted:#a39c84;
+  --rule:#e3dcc4; --stamp:#d65a4a; --photo-bg:#34322b;
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:border-box}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:"Old Standard TT","Times New Roman",Georgia,serif;
+  font-size:1.05rem; line-height:1.62;
+  background-image:
+    radial-gradient(ellipse at 20% 10%, rgba(0,0,0,.07), transparent 55%),
+    radial-gradient(ellipse at 85% 90%, rgba(0,0,0,.09), transparent 50%);
+}
+.page{max-width:1020px; margin:0 auto; padding:1.2rem 1.1rem 2.5rem}
+
+/* Cabeçalho */
+.masthead{text-align:center; border-bottom:4px double var(--rule); padding-bottom:.7rem}
+.masthead h1{
+  font-family:"Playfair Display","Didot",Georgia,serif; font-weight:900;
+  font-size:clamp(2rem,8vw,4.2rem); line-height:1; margin:.2rem 0 .1rem; letter-spacing:.01em;
+}
+.dateline{
+  display:flex; flex-wrap:wrap; justify-content:space-between; gap:.3rem 1rem;
+  border-top:1px solid var(--rule); border-bottom:1px solid var(--rule);
+  margin-top:.6rem; padding:.25rem .1rem; font-size:.85rem; font-style:italic;
+}
+
+/* Manchete */
+.headline{padding:1.1rem 0 .9rem; border-bottom:1px solid var(--rule); position:relative}
+.headline h2{
+  font-family:"Playfair Display",Georgia,serif; font-weight:900;
+  font-size:clamp(2.1rem,9.5vw,4.6rem); line-height:.98; margin:0 0 .6rem; text-wrap:balance;
+}
